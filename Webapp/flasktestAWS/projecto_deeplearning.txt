@@ -1,0 +1,11 @@
+Projecto Deeplearning Lambton college:
+Python-Flask
+
+Tutorial video:
+https://www.youtube.com/watch?v=TK6DlBl63aI
+
+
+https://flask.palletsprojects.com/en/2.1.x/quickstart/
+
+https://getbootstrap.com/
+
