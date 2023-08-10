@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Resume Searcher</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         body {
             display: flex;
@@ -30,17 +31,17 @@
     <h1 style="position:absolute; top:10px; left:10px;">Resume Searcher</h1>
     <div class="half">
         <h2>Job Description</h2>
-        <textarea></textarea>
+        <form action="{{ url_for('predict') }}" method="post">
+            <textarea name='input_data'></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
     </div>
     <div class="half">
-        <div style="height: 32.33%;">
-            <h2>Choose the number of top resumes</h2>
-            <input type="number" min="1">
-        </div>
         <div style="height: 67.67%;">
             <h2>Best fit resumes for your position</h2>
-            <textarea readonly></textarea>
+            <textarea id="result_data">{{ results if results else '' }}</textarea>
         </div>
     </div>
 </body>
 </html>
+
