@@ -16,7 +16,7 @@ def predict():
 
     formatted_details = []
     formatted_scores = []
-    
+
     if results and len(results) >= 2:
         details = results[0]  
         if isinstance(details, str):  # Check if the result is a string representation of a list
