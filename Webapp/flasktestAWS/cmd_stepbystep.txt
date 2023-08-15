@@ -1,0 +1,61 @@
+Step 1:
+
+1.Open CMD and type 
+pip install flask (or pip3: depending of what you are using)
+
+In your laptop
+2.Choose a place to create a folder for all project
+example: WebPythonFlask
+3.remember the ubication of the folder
+
+--------------------------------------------------------------------
+
+Step 2
+one time commands on CMD
+__________________________
+A.Installing virtual environment:
+
+Using CMD go to the folder you created and inside type:
+
+python3 -m venv <nombre> ( to create venv)
+example:
+python3 -m venv venv
+
+(now a folder called 'venv' must appear insede the folder WebPythonFlask)
+
+next type:
+source <nombre>\Scripts\activate (to activate venv)
+example
+WebPythonFlask\Scripts\activate
+
+-----------------------------------------------------------------------
+Step 3:
+Copy ml-model folder next to venv folder
+copy web_project next to venv folder
+
+Note: Inside WebPythonFlask folder, we now should have 3 folders (venv, ml-model, web_project)
+--------------------------------------------------------------------------------------
+
+
+Step4:
+For running flask:
+
+1. open CMD
+2. Go to the folder using commands
+3. type: flask run
+4. copy and paste: http://127.0.0.1:5000 in new tab browser  (or adress that is indicated when running flask)
+
+Example:
+In my case
+
+1. move to D:
+2. move to WebPythonFlask
+3. move into web_project folder (here is the app.py file)
+4. flask run
+5. copy adress
+
+D:
+cd D:\juang\Dropbox\Cursos\Proyectos\WebPythonFlask
+cd web_project
+flask run
+http://127.0.0.1:5000
